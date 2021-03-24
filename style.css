@@ -34,7 +34,7 @@ button{
   display: none;
 }
 
-#startBtn{
+#startBtn, #stopBtn{
   font-size:20px;
   font-family: ubuntu, serif;
   font-weight: 500;
@@ -43,7 +43,11 @@ button{
 #startBtn:active{
   background: black;
   color: white;
-  
+}
+
+#stopBtn:active{
+  background: black;
+  color: white;
 }
 
 #button1 {
