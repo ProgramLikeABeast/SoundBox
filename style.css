@@ -33,3 +33,47 @@ button{
 .hidden{
   display: none;
 }
+
+#startBtn,endBtn{
+  font-size:20px;
+  font-family: ubuntu, serif;
+  font-weight: 400;
+}
+
+#startBtn:active{
+  background: black;
+  color: white;
+  
+}
+
+#button1 {
+    background: lightgreen;
+}
+
+#button2 {
+    background: lightblue;
+}
+
+#button3 {
+    background: pink;
+}
+
+#button4 {
+    background: lightyellow;
+}
+
+#button1:active {
+    background:green;
+}
+
+#button2:active {
+    background:blue;
+}
+
+#button3:active {
+    background:red;
+}
+
+#button4:active {
+    background:yellow;
+}
