@@ -1,14 +1,15 @@
-// global constants
+//Global constants
 const clueHoldTime = 1000; //how long to hold each clue's light/sound
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
+
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
-var progress = 0;
-var gamePlaying = false;
+var progress = 0;//number of tests the player has passed
+var gamePlaying = false;//if the game is ongoing
 var tonePlaying = false;
 var volume = 0.4; //must be between 0.0 and 1.0
-var guessCounter = 0;
+var guessCounter = 0;//number of clues the player has passed in a subroutine test
 
 function startGame() {
   //initialize game variables
@@ -101,7 +102,16 @@ function guess(btn) {
   if (!gamePlaying) {
     return;
   }
-  //is guess correct?
+  
+  if(btn=pattern[guessCount]){//if guess is wrong
+    loseGame();
+  }else if(guessCount==progress){//if it is not turning over
+    progress+=1;
+  }else if(){//if is not the last turn
+    
+  }else{
+    
+  }
 }
 
 //Page Initialization
