@@ -5,11 +5,11 @@ const nextClueWaitTime = 1000; //how long to wait before starting playback of th
 
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
-var progress = 0;//number of tests the player has passed
-var gamePlaying = false;//if the game is ongoing
+var progress = 0; //number of tests the player has passed
+var gamePlaying = false; //if the game is ongoing
 var tonePlaying = false;
 var volume = 0.4; //must be between 0.0 and 1.0
-var guessCounter = 0;//number of clues the player has passed in a subroutine test
+var guessCounter = 0; //number of clues the player has passed in a subroutine test
 
 function startGame() {
   //initialize game variables
@@ -102,15 +102,20 @@ function guess(btn) {
   if (!gamePlaying) {
     return;
   }
-  
-  if(btn=pattern[guessCount]){//if guess is wrong
+
+  if (btn != pattern[guessCounter]) {
+    //if guess is wrong
     loseGame();
-  }else if(guessCount==progress){//if it is not turning over
-    progress+=1;
-  }else if(){//if is not the last turn
-    
-  }else{
-    
+  } else if (guessCounter != progress) {
+    //if it is not turning over
+    guessCounter++;
+  } else if (progress != pattern.length - 1) {
+    //if is not the last turn
+    progress++;
+    playClueSequence();
+  } else {
+    //win the game
+    winGame();
   }
 }
 
