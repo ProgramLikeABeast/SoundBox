@@ -8,7 +8,6 @@ body {
 }
 
 h1 {
-  font-family: verdana, arial, sans-serif;
   background: linear-gradient(to right, #f74337, #fbaf40);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -17,5 +16,20 @@ h1 {
 
 p{
   color: #acacac;
-  font-size:25px;
+  font-size:22px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+
+.hidden{
+  display: none;
 }
