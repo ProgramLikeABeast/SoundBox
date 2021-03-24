@@ -45,9 +45,18 @@ function startTone(btn) {
     tonePlaying = true;
   }
 }
+
 function stopTone() {
   g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
   tonePlaying = false;
+}
+
+function lightButton(btn){
+  document.getElementById("button"+btn).classList.add("lit")
+}
+
+function clearButton(btn){
+  document.getElementById("button"+btn).classList.remove("lit")
 }
 
 //Page Initialization
