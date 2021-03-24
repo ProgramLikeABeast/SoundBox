@@ -85,6 +85,10 @@ function clearButton(btn){
   document.getElementById("button"+btn).classList.remove("lit")
 }
 
+function stopGame(){
+  
+}
+
 function loseGame(){
   stopGame();
   alert("Game Over.");
@@ -93,6 +97,16 @@ function loseGame(){
 function winGame(){
   stopGame();
   alert("You Win.");
+}
+
+function guess(btn){
+  console.log("user guessed: " + btn);
+  if(!gamePlaying){
+    return;
+  }
+  gamePlaying=false;
+  
+  // add game logic here
 }
 
 //Page Initialization
