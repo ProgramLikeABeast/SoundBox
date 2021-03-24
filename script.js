@@ -1,3 +1,5 @@
+// global constants
+const clueHoldTime = 1000; //how long to hold each clue's light/sound
 //Global Variables
 var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
 var progress = 0;
@@ -38,6 +40,7 @@ function playTone(btn, len) {
     stopTone();
   }, len);
 }
+
 function startTone(btn) {
   if (!tonePlaying) {
     o.frequency.value = freqMap[btn];
@@ -49,6 +52,14 @@ function startTone(btn) {
 function stopTone() {
   g.gain.setTargetAtTime(0, context.currentTime + 0.05, 0.025);
   tonePlaying = false;
+}
+
+function playSingleClue(btn){
+  if(gamePlaying){
+    lightButton(btn);
+    playTone(btn,clueHoldTime);
+    setTimeout(clearButton,clueHoldTime,btn);
+  }
 }
 
 function lightButton(btn){
