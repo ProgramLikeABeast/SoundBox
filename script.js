@@ -12,3 +12,12 @@ function startGame(){
     document.getElementById("stopBtn").classList.remove("hidden");
 }
 
+function endGame(){
+    progress = 0;
+    gamePlaying = false;
+    // swap the Start and Stop buttons
+    document.getElementById("stopBtn").classList.add("hidden");
+    document.getElementById("startBtn").classList.remove("hidden");
+}
+
+
