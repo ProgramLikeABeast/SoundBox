@@ -87,12 +87,12 @@ function clearButton(btn){
 
 function loseGame(){
   stopGame();
-  alert("Game Over. You lost.");
+  alert("Game Over.");
 }
 
-function loseGame(){
+function winGame(){
   stopGame();
-  alert("Game Over. You lost.");
+  alert("You Win.");
 }
 
 //Page Initialization
