@@ -11,13 +11,13 @@ h1 {
   background: linear-gradient(to right, #f74337, #fbaf40);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 40px;
-  width: 400px;
+  font-size: 50px;
+  width: 500px;
 }
 
 p {
   color: #acacac;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 button {
@@ -26,9 +26,9 @@ button {
 }
 
 #gameButtonArea > button {
-  width: 200px;
-  height: 200px;
-  margin: 2px;
+  width: 280px;
+  height: 280px;
+  margin: 3px;
 }
 
 .hidden {

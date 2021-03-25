@@ -103,13 +103,13 @@ function guess(btn) {
     return;
   }
 
-  if (btn != pattern[guessCounter]) {
+  if (btn !== pattern[guessCounter]) {
     //if guess is wrong
     loseGame();
-  } else if (guessCounter != progress) {
+  } else if (guessCounter !== progress) {
     //if it is not turning over
     guessCounter++;
-  } else if (progress != pattern.length - 1) {
+  } else if (progress !== pattern.length - 1) {
     //if is not the last turn
     progress++;
     playClueSequence();
@@ -117,6 +117,10 @@ function guess(btn) {
     //win the game
     winGame();
   }
+}
+
+function touchStarted() {
+  getAudioContext().resume();
 }
 
 //Page Initialization
@@ -128,3 +132,4 @@ g.connect(context.destination);
 g.gain.setValueAtTime(0, context.currentTime);
 o.connect(g);
 o.start(0);
+
