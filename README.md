@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](your-link-here)
+![https://github.com/ProgramLikeABeast/SoundBox/blob/master/Recording%20%231.mp4](your-link-here)
 
 
 ## Reflection Questions
