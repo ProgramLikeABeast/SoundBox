@@ -36,10 +36,11 @@ The following **additional** features are implemented:
 
 - [x] Modified the UI, giving a more attractive feeling!
 
-## Video Walkthrough
-
 Here's a walkthrough of implemented user stories:
-![https://github.com/ProgramLikeABeast/SoundBox/blob/master/Recording%20%231.mp4](your-link-here)
+
+<img src='walkthrough_f.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 
 ## Reflection Questions
